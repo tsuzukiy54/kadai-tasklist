@@ -1,0 +1,11 @@
+<h1>id =
+<%= @task.id %>
+の詳細ページ</h1>
+
+<p>
+<%= @task.content %>
+</p>
+
+<%= link_to 'back to list', tasks_path %>
+<%= link_to 'edit task', edit_task_path(@task) %>
+<%= link_to 'delete task',@task, method: :delete, data: { confirm:'delete OK?'} %>
