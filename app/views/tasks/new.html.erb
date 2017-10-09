@@ -1,13 +1,4 @@
 <h1>create new task</h1>
-<%= form_for(@task) do |f| %>
 
-<%= f.label :content, 'task' %>
-
-<%= f.text_field :content %>
-
-
-<%= f.submit '投稿' %>
-
-<% end %>
-
+<%= render 'form', task: @task %>
 <%= link_to 'back to index', tasks_path %>

@@ -1,17 +1,16 @@
 <h1>task一覧</h1>
 
+<p>#ID &gt タスク内容 &gt ステータス</p>
+
 <ul>
-
 <% @tasks.each do |task| %>
-
   <li>
-<%= link_to task.id, task %>
-
-<%= task.content %>
-</li>
-
+    <%= link_to task.id, task %>
+    <%= task.content %>
+      &gt;
+    <%= task.Status %>
+  </li>
 <% end %>
-
 </ul>
 
 <%= link_to 'taskの投稿', new_task_path %> 
