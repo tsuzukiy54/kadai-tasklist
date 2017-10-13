@@ -2,12 +2,25 @@
 <%= @task.id %>
 の詳細ページ</h1>
 
-<p>タスク内容:
-<%= @task.content %>
-</p>
-<p>ステータス:
-<%= @task.Status %>
-</p>
+
+
+<table class="table table-bordered">
+  <tr>
+   <th>id</th>
+   <td><%= @task.id %></td>
+  </tr>
+
+  <tr>
+    <th>タスク内容</th>
+　　<td><%= @task.content %></td>
+  </tr>
+
+  <tr>
+    <th>ステータス</th>
+　　<td><%= @task.status %></td>
+  </tr>
+
+</table>
 
 
 <%= link_to 'back to list', tasks_path %>
