@@ -1,6 +1,5 @@
-<h1>後で消すこと。　　Users#show</h1>
-<p>Find me in app/views/users/show.html.erb
-
 <% if logged_in? %>
   <p>ログイン完了ユーザ: <%= current_user.name %></p>
+  <%= link_to 'TaskList', tasks_url,class: "btn btn-primary" %>
+
 <% end %>
